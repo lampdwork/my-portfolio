@@ -1,8 +1,31 @@
 import './globals.css'
 import { Header } from '@/components/Header/Header'
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: [
+    '400',
+    '100',
+    '200',
+    '300',
+    '500',
+    '600',
+    '700',
+    '800',
+    '900',
+    '400',
+    '100',
+    '200',
+    '300',
+    '500',
+    '600',
+    '700',
+    '800',
+    '900'
+  ]
+})
 
 export const metadata = {
   title: `Dang Lam's Portfolio`,
@@ -18,7 +41,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <Header />
-        <div className='max-w-screen-2xl mx-auto px-8'>{children}</div>
+        <div className='max-w-screen-2xl mx-auto px-16'>{children}</div>
       </body>
     </html>
   )
